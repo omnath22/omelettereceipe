@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @font-face {
+      font-family: "Young Serif";
+      src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    }
+    @font-face {
+      font-family: "Outfit";
+      src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    }
+    
+
+
+    body{
+      font-family: "Young Serif", sans-serif;
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      background-color: hsl(30, 54%, 90%);
+      
+    }
+    
+    .container{
+      width:600px;
+      height:1505px;
+      background-color: white;
+      border-radius: 15px;
+      margin:100px auto 100px auto;
+      padding:20px;
+    }
+    img{
+      width:100%;
+      border-radius: 10px;
+    }
+    h1{
+      font-weight: 400;
+      color:#2e2d2b;
+    }
+    p{
+      font-family: "Outfit";
+      font-size: 15px;
+      color:#676664;
+    }
+    .incontainer{
+      padding:10px 10px 10px 20px;
+      border-radius: 10px;
+      background-color: hsl(330, 100%, 98%);
+    }
+    .incontainer ul li::marker{
+      color:hsl(332, 40%, 45%);
+      
+    }
+    .incontainer ul li{
+      padding-left: 10px;
+      margin:9px 0;
+    }
+  
+    .incontainer ul li b{
+      font-family: "Outfit";
+      font-weight: 800;
+      color:#676664;
+    }
+    .incontainer ul li span{
+      font-family: "Outfit";
+      color:#676664;
+    }
+    h2{
+      color:hsl(32, 38%, 45%);
+      font-family: "Young Serif";
+      font-weight: 500;
+    }
+    .ingredients{
+      margin-bottom: 25px;
+    }
+    .ingredients li::marker{
+      color:hsl(32, 38%, 45%);
+
+    }
+    .ingredients li{
+      padding-left: 10px;
+      margin:10px 0;
+      font-family: "Young Serif";
+      font-weight: 400;
+      color: gray;
+      font-size: 14px;
+    }
+    ol li{
+    padding-left:10px;
+    margin:10px 0;
+    }
+    ol li::marker{
+      color:hsl(32, 38%, 45%);
+    }
+    ol li b{
+      font-family: "Outfit";
+      font-weight: 800;
+      color:#676664;
+    }
+    ol li span{
+      font-family: "Outfit";
+      font-size: 14px;
+      color:#676664
+    }
+    .flexing{
+      padding-left: 30px;
+      width: 350px;
+      display:flex;
+      justify-content:space-between;
+      align-items: center;
+    }.flexing span{
+      color:hsl(32, 38%, 45%);
+      font-family: "Outfit";
+      font-size: 15px;
+      font-weight: 800;
+    }
+  @media only screen and (max-width: 600px) {
+    *{
+      margin:0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: white;
+    }
+  .container{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+  }
+  .flexing{
+    width:80%;
+    margin:15px 0;
+  }
+  img{
+    border-radius: 0;
+  }
+  .main{
+    padding:0 20px 0 20px;
+  }
+  .container h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 16px;
+  }
+  #p1{
+    margin-bottom: 20px;
+  }
+  h2{
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  ol li b{
+    font-size: 16px;
+  }
+  ol li span{
+    font-size: 16px;
+  }
+ .fl{
+  margin-top:30px;
+  margin-bottom: 36px;
+ }
+}
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./assets/images/image-omelette.jpeg" alt="omelette">
+    <div class="main">
+<h1>Simple Omelette Recipe</h1>
+<p id="p1">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+</p>
+<div class="incontainer">
+  <p style="font-weight: 600;font-size: 18px;color:hsl(332, 40%, 45%);">Preparation time</p>
+<ul>
+  <li><b>Total</b><span>: Approximately 10 minutes</span></li>
+  <li><b>Preparation</b><span>: 5 minutes</span></li>
+  <li><b>Cooking</b><span>: 5 minutes</span></li>
+</ul>
+  
+  
+  </div>
+  <h2>Ingredients</h2>
+  <ul class="ingredients">
+    <li>2-3 large eggs</li>
+    <li> Salt, to taste</li>
+    <li>Pepper, to taste</li>
+    <li>1 tablespoon of butter or oil</li>
+    <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+  </ul>
+  <div class="break" style="width:100%;border-top:1px solid  hsl(30, 18%, 87%);"></div>
+<h2>Instructions</h2>
+<ol>
+  <li><b>Beat the eggs</b><span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+    You can add a tablespoon of water or milk for a fluffier texture.</span>
+</li>
+<li><b>Heat the pan</b><span>: Place a non-stick frying pan over medium heat and add butter or oil.</span></li>
+  <li><b>Cook the omelette</b><span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+    the eggs evenly coat the surface.</span></li>
+  <li> <b>Add fillings (optional)</b><span>: When the eggs begin to set at the edges but are still slightly runny in the 
+    middle, sprinkle your chosen fillings over one half of the omelette.</span></li>
+
+  <li><b>Fold and serve</b><span>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+    fillings. Let it cook for another minute, then slide it onto a plate.</span></li>
+
+ <li><b>Enjoy</b><span>: Serve hot, with additional salt and pepper if needed.</span></li>
+
+  
+
+ 
+
+</ol>
+<div class="break" style="width:100%;border-top:1px solid  hsl(30, 18%, 87%);margin-top: 25px;"></div>
+<h2>Nutrition</h2>
+<p>The table below shows nutritional values per serving without the additional fillings.</p>
+<div class="fl">
+<div class="flexing">
+  <p>Calories</p>
+  <span>277kcal</span>
+</div>
+<div class="break" style="width:100%;border-top:1px solid  hsl(30, 18%, 87%);"></div>
+<div class="flexing">
+  <p>Carbs</p>
+  <span>0g</span>
+</div>
+<div class="break" style="width:100%;border-top:1px solid  hsl(30, 18%, 87%);"></div>
+
+<div class="flexing">
+  <p>Protein</p>
+  <span>20g</span>
+</div>
+<div class="break" style="width:100%;border-top:1px solid  hsl(30, 18%, 87%);"></div>
+<div class="flexing">
+  <p>Fat</p>
+  <span>22g</span>
+</div>
+</div>
+</div>
+  </div>
+
+  
+
+  
+
+  
+  
+
+
+</body>
+</html>
